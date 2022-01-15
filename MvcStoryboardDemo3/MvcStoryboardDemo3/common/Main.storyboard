@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QmY-d3-pf8">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home-->
+        <scene sceneID="m9V-MH-clZ">
+            <objects>
+                <viewController id="QmY-d3-pf8" userLabel="Home" customClass="HomeUIViewController" customModule="MvcStoryboardDemo3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hVp-os-e2Z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" verticalCompressionResistancePriority="250" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Kh3-0I-Baa">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="05j-OO-Ejf">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DcP-GC-jWC"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="05j-OO-Ejf" firstAttribute="centerY" secondItem="hVp-os-e2Z" secondAttribute="centerY" id="FkV-uX-2I9"/>
+                            <constraint firstItem="05j-OO-Ejf" firstAttribute="centerX" secondItem="hVp-os-e2Z" secondAttribute="centerX" id="MK2-5c-tWI"/>
+                            <constraint firstItem="DcP-GC-jWC" firstAttribute="bottom" secondItem="Kh3-0I-Baa" secondAttribute="bottom" id="kMh-9v-bGv"/>
+                            <constraint firstItem="Kh3-0I-Baa" firstAttribute="leading" secondItem="DcP-GC-jWC" secondAttribute="leading" id="oAy-BF-deH"/>
+                            <constraint firstItem="Kh3-0I-Baa" firstAttribute="top" secondItem="DcP-GC-jWC" secondAttribute="top" id="t9K-kE-zu1"/>
+                            <constraint firstItem="DcP-GC-jWC" firstAttribute="trailing" secondItem="Kh3-0I-Baa" secondAttribute="trailing" id="u7v-NB-O5z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="BeerList" id="fW2-ct-gbK" userLabel="Home" customClass="HomeUIViewController.swift" customModule="MvcStoryboardDemo3" customModuleProvider="target"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="05j-OO-Ejf" id="Zxi-et-60i"/>
+                        <outlet property="tableView" destination="Kh3-0I-Baa" id="HCV-gr-2On"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ld-Fq-nQc" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1850.7246376811595" y="-619.41964285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
